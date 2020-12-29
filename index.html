@@ -1,0 +1,34 @@
+<html>
+<head>
+<style>
+img{
+    width:700px;
+    height: 700px;
+}
+body{
+    background-color: aliceblue;
+}
+</style>
+</head>
+<body>
+    <center><h1>Family Book </h1>
+    <img id="firstlogo"  src="download.jfif">
+    <div id="Hello"></div>
+<div><button onclick="change()">Next</button></div>
+    </center>
+<script>
+var images=["DIYA.jpg","MOM.jpg","Papa.jpg","Samu.jpg"];
+var name=["Diya","Divya","Rakesh","Shambhavi"];
+var i=4;
+function change(){
+document.getElementById("firstlogo").src =images[i];
+document.getElementById("Hello").innerHTML=name[i];
+i++;
+if(i==4){
+    i=0;
+ }
+}
+</script>
+    
+</body>
+</html>
